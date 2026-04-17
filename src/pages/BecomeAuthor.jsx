@@ -1,6 +1,8 @@
 import { useAuth } from "../context/AuthContext.jsx";
 import { useNavigate } from "react-router-dom";
 
+import "../styles/pages/BecomeAuthor.css";
+
 const BASE_URL = import.meta.env.VITE_API_URL;
 
 function BecomeAuthor() {
@@ -32,21 +34,32 @@ function BecomeAuthor() {
   };
 
   return (
-    <div className="become-author">
-      <h1>Become an Author</h1>
-      <p>Want to write and publish your own posts on this blog?</p>
-      <p>
-        Click below to upgrade your account to author status, then head to the
-        author dashboard to start writing.
-      </p>
-      <button onClick={handleBecomeAuthor}>Become an Author</button>
-      <a
-        href="https://odin-blog-api-author.onrender.com/"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Go to Author Dashboard →
-      </a>
+    <div className="become-author-container">
+      <div className="become-author-card">
+        <h1>Become an Author</h1>
+
+        <div className="content">
+          <p>Want to write and publish your own posts on this blog?</p>
+          <p>
+            Click below to upgrade your account to author status, then head to
+            the author dashboard to start writing.
+          </p>
+        </div>
+
+        <div className="actions">
+          <button onClick={handleBecomeAuthor} className="become-btn">
+            Become an Author
+          </button>
+          <a
+            href="https://odin-blog-api-author.onrender.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="dashboard-link"
+          >
+            Go to Author Dashboard →
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

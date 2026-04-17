@@ -71,18 +71,19 @@ function Login() {
               required
             />
 
+            {/* Button spans both columns */}
             <div className="button-container">
               <button type="submit" disabled={loading} className="login-btn">
                 {loading ? "Logging in..." : "Login"}
               </button>
             </div>
 
+            {/* Signup link spans both columns */}
             <p className="signup-link">
               Don't have an account?{" "}
               <a href="#" className="signup-link-text">
                 Sign up
               </a>{" "}
-              (coming soon)
             </p>
           </div>
         </form>
