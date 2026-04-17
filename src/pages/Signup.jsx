@@ -52,6 +52,7 @@ function Signup() {
           username: formData.username,
           email: formData.email,
           password: formData.password,
+          confirmPassword: formData.confirmPassword,
         }),
       });
 
@@ -65,6 +66,7 @@ function Signup() {
       navigate("/login");
     } catch (err) {
       setError(err.message);
+      console.error("Signup Error:", err);
     } finally {
       setLoading(false);
     }
@@ -79,7 +81,6 @@ function Signup() {
 
         <form onSubmit={handleSubmit} className="signup-form">
           <div className="form-grid">
-            {/* Username */}
             <label className="form-label">Username</label>
             <input
               type="text"
@@ -90,7 +91,6 @@ function Signup() {
               required
             />
 
-            {/* Email */}
             <label className="form-label">Email</label>
             <input
               type="email"
@@ -101,7 +101,6 @@ function Signup() {
               required
             />
 
-            {/* Password */}
             <label className="form-label">Password</label>
             <input
               type="password"
@@ -112,7 +111,6 @@ function Signup() {
               required
             />
 
-            {/* Confirm Password */}
             <label className="form-label">Confirm Password</label>
             <input
               type="password"
@@ -123,14 +121,12 @@ function Signup() {
               required
             />
 
-            {/* Submit Button */}
             <div className="button-container">
               <button type="submit" disabled={loading} className="signup-btn">
                 {loading ? "Creating Account..." : "Sign Up"}
               </button>
             </div>
 
-            {/* Login Link */}
             <p className="login-link">
               Already have an account?{" "}
               <a href="/login" className="login-link-text">

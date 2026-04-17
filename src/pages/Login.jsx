@@ -47,7 +47,7 @@ function Login() {
   return (
     <div className="login-container">
       <div className="login-box">
-        <h2>Author Only Login</h2>
+        <h2>Login</h2>
 
         {error && <p className="error-message">{error}</p>}
 
