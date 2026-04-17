@@ -1,0 +1,121 @@
+/* =============== Signup Page =============== */
+
+.signup-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8fafc;
+  padding: 20px;
+}
+
+.signup-box {
+  background-color: white;
+  padding: 50px 45px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 460px;
+}
+
+.signup-box h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #1e2937;
+  font-size: 1.85rem;
+  font-weight: 700;
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  color: #ef4444;
+  background-color: #fee2e2;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  font-size: 1rem;
+}
+
+/* Grid Layout - 2 columns */
+.signup-form .form-grid {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 26px 20px;
+  align-items: center;
+}
+
+/* Labels */
+.form-label {
+  font-weight: 600;
+  color: #374151;
+  font-size: 1.06rem;
+  text-align: right;
+  padding-right: 12px;
+  white-space: nowrap;
+}
+
+/* Inputs */
+.form-grid input {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1.03rem;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+.form-grid input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+/* Button Container */
+.button-container {
+  grid-column: 1 / -1;
+  margin-top: 15px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.signup-btn:hover:not(:disabled) {
+  background-color: #2563eb;
+  transform: translateY(-1px);
+}
+
+.signup-btn:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* Login Link */
+.login-link {
+  grid-column: 1 / -1;
+  text-align: center;
+  margin-top: 25px;
+  color: #64748b;
+  font-size: 1rem;
+}
+
+.login-link-text {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link-text:hover {
+  text-decoration: underline;
+}
