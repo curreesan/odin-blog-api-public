@@ -20,12 +20,7 @@ function Home() {
           throw new Error(data.message || "Failed to fetch posts");
         }
 
-        // Filter only PUBLISHED posts (or adjust according to your backend)
-        const publishedPosts = data.posts
-          ? data.posts.filter((post) => post.status === "PUBLISHED")
-          : [];
-
-        setPosts(publishedPosts);
+        setPosts(data.posts || []);
       } catch (err) {
         console.error("Fetch Error:", err);
         setError(err.message);
@@ -38,7 +33,7 @@ function Home() {
   }, []);
 
   const handleReadMore = (postId) => {
-    navigate(`/post/${postId}`);
+    navigate(`/posts/${postId}`);
   };
 
   if (loading) return <h2 className="loading">Loading posts...</h2>;

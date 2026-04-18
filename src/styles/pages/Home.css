@@ -62,7 +62,7 @@
   line-height: 1.4;
 }
 
-/* Content Preview - Simple version (no line-clamp) */
+/* Content Preview  */
 .post-content {
   flex-grow: 1;
   margin-bottom: 24px;

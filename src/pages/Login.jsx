@@ -79,7 +79,7 @@ function Login() {
 
             <p className="signup-link">
               Don't have an account?{" "}
-              <a href="#" className="signup-link-text">
+              <a href="/signup" className="signup-link-text">
                 Sign up
               </a>{" "}
             </p>
