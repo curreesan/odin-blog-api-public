@@ -56,7 +56,7 @@ function BecomeAuthor() {
             rel="noreferrer"
             className="dashboard-link"
           >
-            Go to Author Dashboard →
+            Go to Author Website →
           </a>
         </div>
       </div>
