@@ -1,6 +1,6 @@
 # 📖 Odin Blog — Public Site
 
-🔗 **Live Demo:** https://your-public-site-url.com  
+🔗 **Live Demo:** https://odin-blog-api-public.onrender.com
 🔗 **Backend Repo:** https://github.com/curreesan/odin-blog-api-backend  
 🔗 **Author Dashboard Repo:** https://github.com/curreesan/odin-blog-api-author
 
